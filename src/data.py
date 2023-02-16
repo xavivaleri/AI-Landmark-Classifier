@@ -105,7 +105,7 @@ def get_data_loaders(
         shuffle = False
     )
     data_loaders["valid"] = torch.utils.data.DataLoader(
-        # YOUR CODE HERE
+        
         valid_data,
         batch_size=batch_size,
         sampler=valid_sampler,
@@ -159,7 +159,7 @@ def visualize_one_batch(data_loaders, max_n: int = 5):
 
 
     # Get class names from the train data loader
-    class_names  = data_loaders['train'].dataset.classes # YOUR CODE HERE
+    class_names  = data_loaders['train'].dataset.classes 
 
     # Convert from BGR (the format used by pytorch) to
     # RGB (the format expected by matplotlib)
